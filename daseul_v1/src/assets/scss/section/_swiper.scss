@@ -1,0 +1,31 @@
+.swiper {
+    width: 60%;
+    margin: 10vw auto;
+    .swiper-slide {
+        text-align: center;
+        opacity: 0 !important;
+
+        img {
+            object-fit: cover;
+            max-height: 428px;
+            margin-bottom: 5vw;
+        }
+        h1 {
+            transition: all 0.2s;
+            position: relative;
+            top: -2vw;
+            margin-bottom: 1.5vw;
+            font-family: "gmarket";
+        }
+        p {
+            font-family: "Montserrat";
+        }
+
+        &-active {
+            opacity: 1 !important;
+            h1 {
+                top: 0 !important;
+            }
+        }
+    }
+}
